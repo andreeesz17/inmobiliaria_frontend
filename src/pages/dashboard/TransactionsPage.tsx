@@ -6,7 +6,7 @@ export default function TransactionsPage() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   useEffect(() => {
-    getTransactions().then(setTransactions);
+    getTransactions().then((data) => setTransactions(data as any));
   }, []);
 
   return (
