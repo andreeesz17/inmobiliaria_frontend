@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Variables de Entorno
 
@@ -62,7 +62,7 @@ Producción:
 VITE_API_URL=https://api-produccion.com
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Comandos
 
@@ -74,7 +74,7 @@ VITE_API_URL=https://api-produccion.com
 | `npm run lint` | Revisar |
 
 
-------------------------------------------------------------------------
+---
 
 ## Autenticación
 
@@ -82,7 +82,7 @@ El sistema usa JWT.
 
 Authorization: Bearer \<token\>
 
-------------------------------------------------------------------------
+---
 
 ## Endpoints
 
@@ -107,7 +107,7 @@ GET /appointments
 GET /users/:id\
 PUT /users/:id
 
-------------------------------------------------------------------------
+---
 
 ## Credenciales
 
@@ -119,7 +119,7 @@ Usuario\
 user@test.com\
 User123
 
-------------------------------------------------------------------------
+---
 
 ## Ejemplo
 
@@ -137,7 +137,7 @@ const data = await res.json();
 localStorage.setItem("token", data.token);
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Estructura
 
@@ -164,7 +164,7 @@ inmobiliaria_frontend/
 ├── tsconfig.json
 └── vite.config.ts
 ```
-------------------------------------------------------------------------
+---
 
 ## Despliegue
 
@@ -174,7 +174,7 @@ npm run build
 
 Configurar VITE_API_URL en producción.
 
-------------------------------------------------------------------------
+---
 
 ## Licencia
 
