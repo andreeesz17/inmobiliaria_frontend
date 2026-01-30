@@ -117,12 +117,13 @@ export default function Login() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <label className="text-sm font-bold text-slate-700 dark:text-slate-300 ml-1">
+              <label htmlFor="email" className="text-sm font-bold text-slate-700 dark:text-slate-300 ml-1">
                 Correo Electrónico
               </label>
               <div className="relative group">
                 <FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-cyan-500 transition-colors" />
                 <input
+                  id="email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -135,7 +136,7 @@ export default function Login() {
 
             <div className="space-y-2">
               <div className="flex justify-between items-center px-1">
-                <label className="text-sm font-bold text-slate-700 dark:text-slate-300">
+                <label htmlFor="password" className="text-sm font-bold text-slate-700 dark:text-slate-300">
                   Contraseña
                 </label>
                 <button type="button" className="text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:underline">
@@ -145,6 +146,7 @@ export default function Login() {
               <div className="relative group">
                 <FaLock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-cyan-500 transition-colors" />
                 <input
+                  id="password"
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
